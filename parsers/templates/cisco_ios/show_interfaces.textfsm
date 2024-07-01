@@ -1,0 +1,11 @@
+Value Required Interface (\S+)
+Value Required Management_IPV4 ({{Management_IPV4}})
+
+
+Start
+  ^\S+\s+is\s+.+?,\s+line\s+protocol.*$$ -> Continue.Record
+  ^${Interface} is up, line protocol is up
+  ^\s+Internet\s+address\s+is\s+${Management_IPV4}\/\d+\s*$$ 
+  # Capture time-stamp if vty line has command time-stamping turned on
+  ^Load\s+for\s+
+  ^Time\s+source\s+is

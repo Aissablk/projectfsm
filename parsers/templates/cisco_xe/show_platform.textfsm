@@ -1,0 +1,7 @@
+Value SLOT (R[0-9])
+Value Status (ok, active|booting|init|disabled|unknown|shutdown|ok, standby|init, standby)
+Value Type (\S+)
+
+Start
+  ^Chassis type:\s${Type}
+  ^${SLOT}\s+\S+\s+${Status} -> Record

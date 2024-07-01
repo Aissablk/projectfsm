@@ -1,0 +1,4 @@
+Value Status (Normal|Disabled|Faulty|Not Present|Over Temperature|Power Down|Under Voltage|Over Voltage|Error|Unknown)
+ 
+Start
+  ^Status:\s+${Status} -> Record

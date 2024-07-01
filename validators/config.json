@@ -1,0 +1,67 @@
+{
+    "fields": {
+        "Management_IPV4": {
+            "type": "ip_address",
+            "mandatory": true,
+            "pattern": "^((25[0-5]|(2[0-4]|1\\d|[1-9]|)\\d)\\.?\\b){4}$"
+        },
+        "Device_Name": {
+            "type": "string",
+            "mandatory": true,
+            "maxLength": 50
+        },
+        "Site": {
+            "type": "string",
+            "mandatory": true,
+            "maxLength": 50
+        },
+        "Type": {
+            "type": "string",
+            "mandatory": true,
+            "maxLength": 100
+        },
+        "Device_Role": {
+            "type": "string",
+            "mandatory": true,
+            "maxLength": 50
+        },
+        "Status": {
+            "type": "string",
+            "mandatory": true,
+            "allowedValues": [
+                "offline",
+                "active",
+                "planned",
+                "staged",
+                "failed",
+                "inventory",
+                "decomissioning"
+            ]
+        },
+        "Manufacturer": {
+            "type": "string",
+            "mandatory": true,
+            "maxLength": 50
+        },
+        "Platform_Version": {
+            "type": "string",
+            "mandatory": false,
+            "maxLength": 50
+        },
+        "Serial_Number": {
+            "type": "string",
+            "mandatory": true,
+            "maxLength": 50
+        },
+        "Interface": {
+            "type": "string",
+            "mandatory": true,
+            "maxLength": 50
+        },
+        "Interface_Type": {
+            "type": "string",
+            "mandatory": true,
+            "maxLength": 50
+        }
+    }
+}

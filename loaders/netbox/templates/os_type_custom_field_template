@@ -1,0 +1,11 @@
+{
+    "resource_data": {
+        "name": "os_type",
+        "label": "OS Type",
+        "type":"text",
+        "content_types":["dcim.device"],
+        "required": false
+    },
+    "endpoint1": "extras",
+    "endpoint2": "custom-fields"
+    }

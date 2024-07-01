@@ -1,0 +1,9 @@
+{
+    "resource_data": {
+        "address": "{{ Management_IPV4 }}",
+        "assigned_object_id": "{{ interface_id }}",
+        "assigned_object_type": "dcim.interface"
+    },
+    "endpoint1": "ipam",
+    "endpoint2": "ip-addresses"
+}   

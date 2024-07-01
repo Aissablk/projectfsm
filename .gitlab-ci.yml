@@ -1,0 +1,30 @@
+# This is Gitlab-ci pipeline file for Netbox-autosync
+
+stages:
+  - run-main-file
+
+
+before_script:
+  - sudo apt-get update -qy
+  - sudo apt-get install -y python3 python3-pip
+  - pip3 install -r requirements.txt
+
+
+run-main-file:
+  stage: run-main-file
+  script:
+    - echo "Making logs directory..."
+    - mkdir -p logs
+    - echo "Running main python file..."
+    - python3 main.py --create
+  artifacts:
+    paths:
+      - logs/
+  tags:
+    - testnetboxautosync
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "master" # Merge Requeest target branch name
+      changes:
+        - config/collector_inventory.yml
+
+        

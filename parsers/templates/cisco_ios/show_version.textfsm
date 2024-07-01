@@ -1,0 +1,11 @@
+Value Platform_Version (.+?)
+Value Device_Name (\S+)
+Value Serial_Number (\S+)
+Value Type (\S+)
+
+Start
+  ^.*Software,*\s+(.*),\sVersion\s${Platform_Version},
+  ^\s*${Device_Name}\s+uptime\s+is\s+ -> Continue
+  ^[Pp]rocessor\s+board\s+ID\s+${Serial_Number}
+  ^Model\s+number\s+:\s+${Type}
+  

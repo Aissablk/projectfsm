@@ -1,0 +1,8 @@
+{
+    "resource_data": {
+        "name": "{{ Region }}",
+        "slug": "{{ Region_slug }}"
+    },
+    "endpoint1": "dcim",
+    "endpoint2": "regions"
+}

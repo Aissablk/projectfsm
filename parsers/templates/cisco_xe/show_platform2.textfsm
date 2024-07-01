@@ -1,0 +1,9 @@
+Value Required SWITCH (\d+)
+Value Required ROLE (Active|Standby)
+Value STATE (\S+)
+
+Start
+  ^Switch#\s+Role\s+Priority\s+State\s*$$ -> StateRecord
+
+StateRecord
+  ^\*?\s*${SWITCH}\s+${ROLE}\s+\d+\s+${STATE}\s*$$ -> Record

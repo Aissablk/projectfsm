@@ -1,0 +1,8 @@
+{
+    "resource_data": {
+        "name": "{{ Tenant }}",
+        "slug": "{{ Tenant_slug }}"
+    },
+    "endpoint1": "tenancy",
+    "endpoint2": "tenants"
+}

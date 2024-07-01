@@ -1,0 +1,8 @@
+{
+    "resource_data": {
+        "name": "{{ Device_Role }}",
+        "slug": "{{ Device_Role_slug }}"
+    },
+    "endpoint1": "dcim",
+    "endpoint2": "device_roles"
+}

@@ -1,0 +1,9 @@
+{
+    "resource_data": {
+        "name": "{{ Site }}",
+        "slug": "{{ Site_slug }}",
+        "region": {"slug": "{{ Region_slug }}"}
+    },
+    "endpoint1": "dcim",
+    "endpoint2": "sites"
+}

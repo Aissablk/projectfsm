@@ -1,0 +1,23 @@
+{
+    "resource_data": {
+        "name": "{{ Device_Name }}",
+        "device_role": {"slug": "{{ Device_Role_slug }}"},
+        "tenant": {"slug": "{{ Tenant_slug }}"},
+        "location": {"slug": "{{ Location_slug }}"},
+        "device_type": {
+            "model": "{{ Type }}",
+            "manufacturer": {"name": "{{ Manufacturer }}"}
+        },
+        "site": {"name": "{{ Site }}"},
+        "status": "{{ Status }}",
+        "platform": {"name": "{{ Platform_Version }}"},
+        "serial": "{{ Serial_Number }}",
+        "custom_fields": {
+            "os_type": "{{ os_type }}"
+
+        }
+    },
+
+    "endpoint1": "dcim",
+    "endpoint2": "devices"
+}

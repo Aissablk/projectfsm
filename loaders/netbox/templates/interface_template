@@ -1,0 +1,9 @@
+{
+    "resource_data": {
+        "name": "{{ Interface }}",
+        "device": {"id": "{{ id }}"},
+        "type": "{{ Interface_Type }}"
+    },
+    "endpoint1": "dcim",
+    "endpoint2": "interfaces"
+}

@@ -1,0 +1,9 @@
+{
+    "resource_data": {
+        "model": "{{ Type }}",
+        "slug": "{{ Type_slug }}",
+        "manufacturer": {"name": "{{ Manufacturer }}"}
+    },
+    "endpoint1": "dcim",
+    "endpoint2": "device_types"
+}

@@ -1,0 +1,9 @@
+Value Required SWITCH (\d+)
+Value Required PORTS (\d+)
+Value Required MODEL (\S+)
+
+Start
+  ^Switch\s+Ports\s+Model\s+Serial\s+No.\s+MAC\s+address\s+Hw\s+Ver.\s+Sw\s+Ver.\s*$$ -> ModelHeader
+
+ModelHeader
+  ^\s*${SWITCH}\s+${PORTS}\s+${MODEL}\s+.*$$ -> Record 
